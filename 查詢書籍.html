@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap5.css" />
+    <title>查詢書籍</title>
+    <style>
+      .myKeyWordInput {
+        height: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 簡單查詢 -->
+    <div class="container bg-primary-subtle mt-5 w-50 p-4">
+      <!-- 標題 -->
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">簡易查詢</h3>
+      </div>
+      <!-- 搜尋框與按鈕 -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-4">
+          <div class="input-group mb-3">
+            <input
+              class="myKeyWordInput form-control"
+              placeholder="請輸入關鍵字"
+            />
+            <button class="btn btn-outline-secondary" type="buton" id="button">
+              X
+            </button>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary btn-lg">搜尋</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-light btn-lg">進階搜尋</button>
+        </div>
+      </div>
+      <!-- 顯示關鍵字 -->
+      <div class="text-center">
+        <p class="m-0">關鍵字:</p>
+      </div>
+    </div>
+    <!-- END 簡單查詢 -->
+    <div class="container bg-primary-subtle mt-5 w-50 p-4">
+      <!-- 進階查詢標題 -->
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">進階查詢</h3>
+      </div>
+
+      <!-- 第一層 搜尋欄 -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-2">
+          <select class="form-select form-select-lg">
+            <option selected>書名</option>
+            <option value="1">作者</option>
+            <option value="2">ISBN</option>
+            <option value="3">出版者</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <div class="input-group">
+            <input class="form-control" placeholder="請輸入關鍵字" />
+            <button class="btn btn-outline-secondary">X</button>
+          </div>
+        </div>
+      </div>
+      <!-- 年份區塊 -->
+      <div class="row justify-content-center align-items-center mb-3">
+        <div class="col-3">
+          <label class="fw-bold">年份</label>
+          <input class="form-control" />
+        </div>
+        <div class="col-auto d-flex justify-content-center">
+          <p class="fs-5 my-auto mx-3">至</p>
+        </div>
+        <div class="col-3">
+          <label class="fw-bold">結束年份</label>
+          <input class="form-control" />
+        </div>
+      </div>
+
+      <!-- 類型 & 語言 -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-4">
+          <label class="fw-bold">語言</label>
+          <select class="form-select form-select-lg">
+            <option>全語言</option>
+            <option value="國語">國語</option>
+            <option value="英語">英語</option>
+            <option value="日語">日語</option>
+            <option value="韓語">韓語</option>
+            <option value="法語">法語</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <label class="fw-bold">類型</label>
+          <select class="form-select form-select-lg">
+            <option>全類型</option>
+            <option value="中文圖書">中文圖書</option>
+            <option value="兒童圖書">兒童圖書</option>
+            <option value="青少年圖書">青少年圖書</option>
+            <option value="漫畫">漫畫</option>
+            <option value="小說">小說</option>
+          </select>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- 查詢按鈕 -->
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button class="btn btn-primary btn-lg">查詢</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-light btn-lg">清除</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-toolbar btn-lg">切換簡單查詢</button>
+        </div>
+      </div>
+      <!---->
+    </div>
+  </body>
+</html>
