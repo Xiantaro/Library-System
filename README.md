@@ -9,7 +9,7 @@
 其他都是合併的，
 
 有用到模組 slider 輪播
-[---](https://www.jqueryscript.net/slider/Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick.html)
+https://www.jqueryscript.net/slider/Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick.html
 
 Start-----------------------------------------------------------------------
 
