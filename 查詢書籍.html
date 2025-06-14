@@ -17,6 +17,7 @@
       asp-controller="待填contoller""
       asp-action="待填action"
       method="post"
+      id="esaySearch"
       class="container bg-primary bg-opacity-25 mt-5 w-50 p-4"
     >
       <!-- 標題 START -->
@@ -46,8 +47,8 @@
           <button type="submit" class="btn btn-primary btn-lg">搜尋</button>
         </div>
         <div class="col-auto">
-          <button type="button" class="btn btn-light btn-lg">進階搜尋</button>
-        </div>
+          <button type="button" class="btn btn-light btn-lg" onclick="searchChange()">進階搜尋</button>
+        </div> 
       </div>
       <!-- 搜尋框與按鈕 END -->
       <!-- 顯示關鍵字 START -->
@@ -63,11 +64,13 @@
     </form>
     <!-- 顯示關鍵字 END -->
     <!-- 簡單查詢 END -->
+    <!-- 進階查詢 START -->
     <form
       asp-controller="待填contoller"
       asp-action="待填Action"
       method="post"
-      class="container bg-primary bg-opacity-25 mt-5 w-50 p-4"
+      class="container bg-primary bg-opacity-25 mt-5 w-50 p-4 d-none"
+      id="advSearch"
     >
       <div class="text-center mb-4">
         <h3 class="fw-bold">進階查詢</h3>
@@ -148,15 +151,23 @@
           <button type="reset" class="btn btn-light btn-lg">清除</button>
         </div>
         <div class="col-auto">
-          <button type="button" class="btn btn-toolbar btn-lg">
+          <button type="button" class="btn btn-toolbar btn-lg" onclick="searchChange()">
             切換簡易查詢
           </button>
         </div>
       </div>
       <!-- 第四層 查詢按鈕 END -->
     </form>
-    <div class="containser"></div>
+    <!-- 進階查詢 END -->
+    <div class="containser "></div>
+    
+    <script>
+        function searchChange(){
+          $("#esaySearch").toggleClass("d-none");
+          $("#advSearch").toggleClass("d-none");
+        }
+    </script>
     <script src="/bootstrap5/js/bootstrap.min.js"></script>
-    <script></script>
+    <script src="/jquery.js"></script>
   </body>
 </html>
