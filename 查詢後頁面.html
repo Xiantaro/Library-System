@@ -163,8 +163,20 @@
         <!-- ------------------------------------------------------------>
         <!-- 右邊區塊-圖書列表 START -->
         <div class="col bg-primary bg-opacity-25 h-75">
-          <div class="h2 bg-danger">書本量、顯示數目</div>
-          <div class="h2 bg-danger text-bg-dark">排序方式</div>
+          <!-- 上層顯示 書本數量、顯示數 START -->
+          <div class="d-flex mt-3">
+            <div class="col h5 m-2">第 1 - 5 筆,共 2000 本書</div>
+            <div class="col d-flex justify-content-end">
+              <div class="col-auto align-content-center">每頁顯示:</div>
+              <select class="col-auto mx-3">
+                <option value="displayFive">5筆</option>
+                <option value="displayTen">10筆</option>
+                <option value="displayTwentyfive">25筆</option>
+                <option value="displayFifty">50筆</option>
+              </select>
+            </div>
+          </div>
+          <!-- 上層顯示 書本數量、顯示數 END -->
           <!-- 藏書列表 START -->
           <div>
             <table class="table" id="bookList">
